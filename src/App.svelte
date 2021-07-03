@@ -9,4 +9,7 @@
   h1 {
     color: $color;
   }
+  .rovert {
+    color: red;
+  }
 </style>
