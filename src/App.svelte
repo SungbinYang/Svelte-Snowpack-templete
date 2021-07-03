@@ -3,6 +3,9 @@
 </script>
 
 <h1>{name}</h1>
+<button class="btn btn-primary">
+  TEST!
+</button>
 
 <style lang="scss">
   $color: red;

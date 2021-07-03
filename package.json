@@ -15,7 +15,9 @@
     "@snowpack/plugin-optimize": "^0.2.13",
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-svelte": "^3.7.0",
+    "bootstrap": "^5.0.0-beta3",
     "snowpack": "^3.7.1",
-    "svelte": "^3.38.3"
+    "svelte": "^3.38.3",
+    "svelte-preprocess": "^4.7.3"
   }
 }
