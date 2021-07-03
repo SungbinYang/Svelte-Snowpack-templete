@@ -1,18 +1,15 @@
 <script>
-  let name = 'Hello Sevelte!'
+	import { todos } from '~/store';
+	import CreateTodo from '~/components/CreateTodo';
 </script>
 
-<h1>{name}</h1>
-<button class="btn btn-primary">
-  TEST!
-</button>
+<div class="container">
+  <CreateTodo />
+  {#each $todos as todo (todo.id)}
+    <div>{todo.title}</div>
+  {/each}
+</div>
 
 <style lang="scss">
-  $color: red;
-  h1 {
-    color: $color;
-  }
-  .rovert {
-    color: red;
-  }
+
 </style>
