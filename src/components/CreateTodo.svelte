@@ -1,7 +1,7 @@
 <script>
   import shortid from 'shortid';
-	import { todos } from '~/store';
-  let title = ''
+	import { todos, saveStorage } from '~/store';
+  let title = '';
 
   function createTodo() {
     if (!title || !title.trim()) return;
@@ -11,6 +11,7 @@
     });
 
     $todos = $todos;
+    saveStorage();
 
     title = '';
     console.log($todos);

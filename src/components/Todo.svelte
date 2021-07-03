@@ -1,5 +1,5 @@
 <script>
-	import { todos } from '~/store';
+	import { todos, saveStorage } from '~/store';
   export let todo;
 
   let isEditMode = false;
@@ -16,11 +16,13 @@
 
   function updateTodo() {
     todo.title = title;
+    saveStorage();
     offEditMode();
   }
 
   function deleteTodo() {
     $todos = $todos.filter(t => t.id !== todo.id);
+    saveStorage();
   }
 </script>
 
